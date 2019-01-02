@@ -1,0 +1,9 @@
+static dateConv(unixDate) {
+	//Unix seconds
+	def unix_seconds = unixDate;
+	//convert seconds to milliseconds
+	Date date = new Date(unix_seconds*1000L);
+	// format of the date
+	SimpleDateFormat jdf = new SimpleDateFormat("yyyy-MM-dd");
+	String java_date = jdf.format(date);
+};
